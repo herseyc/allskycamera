@@ -1,6 +1,6 @@
 {
     "ENCRYPT_PASSWORDS_comment": "Do not manually adjust",
-    "ENCRYPT_PASSWORDS": false,
+    "ENCRYPT_PASSWORDS": true,
     "CAMERA_INTERFACE": "indi",
     "INDI_SERVER": "localhost",
     "INDI_PORT": 7624,

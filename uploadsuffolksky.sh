@@ -7,5 +7,5 @@
 
 # use sftp to copy the latest.jpg to suffolksky.com
 
-sftp -i PATHTOAWS.pem USER@www.suffolksky.com:/home/bitnami/stack/wordpress/ <<< $'put /var/www/html/allsky/images/latest.jpg'
+sftp -i PATHTOAWS.pem USER@HOST:/home/USER/stack/wordpress/ <<< $'put /var/www/html/allsky/images/latest.jpg'
 

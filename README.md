@@ -7,3 +7,12 @@ Access the All Sky Camera https://vhersey.hopto.org:5010/indi-allsky
 Indi-AllSky: https://github.com/aaronwmorris/indi-allsky
 
 Blog: http://www.suffolksky.com/
+
+## AllSky Camera Parts List
+SVBONY SV305 Camera - https://amzn.to/4ox83E4
+Raspberry Pi 4 4GB Starter Kit - https://amzn.to/3H2NvT5
+SanDisk 128GB microSDXC Memory Card - https://amzn.to/40Zq3N7
+Enclosure - https://amzn.to/4lfwnHL 
+4" Dome with 1/2 flange and pre-drilled holes - https://amzn.to/4lCxnpD
+
+

@@ -10,11 +10,17 @@ Blog: http://www.suffolksky.com/
 
 ## AllSky Camera Parts List
 SVBONY SV305 Camera - https://amzn.to/4ox83E4
+
 Raspberry Pi 4 4GB Starter Kit - https://amzn.to/3H2NvT5
+
 SanDisk 128GB microSDXC Memory Card - https://amzn.to/40Zq3N7
+
 Enclosure - https://amzn.to/4lfwnHL 
+
 4" Dome with 1/2 flange and pre-drilled holes - https://amzn.to/4lCxnpD
+
 DHT Temperature and Humidity Sensor Module - https://amzn.to/4m5yfUq
+
 USB GPS Receiver - https://amzn.to/4mxCZlA
 
 

@@ -101,10 +101,10 @@
     "DAYTIME_CAPTURE": true,
     "DAYTIME_CAPTURE_SAVE": true,
     "DAYTIME_TIMELAPSE": true,
-    "DAYTIME_CONTRAST_ENHANCE": false,
+    "DAYTIME_CONTRAST_ENHANCE": true,
     "NIGHT_CONTRAST_ENHANCE": false,
     "CONTRAST_ENHANCE_16BIT": false,
-    "CLAHE_CLIPLIMIT": 3.0,
+    "CLAHE_CLIPLIMIT": 1.0,
     "CLAHE_GRIDSIZE": 8,
     "NIGHT_SUN_ALT_DEG": -10.0,
     "NIGHT_MOONMODE_ALT_DEG": 0.0,
@@ -177,7 +177,7 @@
     },
     "VARLIB_FOLDER": "/var/lib/indi-allsky",
     "IMAGE_FOLDER": "/var/www/html/allsky/images",
-    "IMAGE_LABEL_TEMPLATE": "# size:30 [Use 60 for higher resolution cameras]\n# xy:-15,15 (Upper Right)\n# anchor:ra (Right Justified)\n# color:0,150,0\n{location}\n{timestamp:%Y.%m.%d %H:%M:%S}\n# color:100,100,0\nLat {latitude:0.1f} Long {longitude:0.1f}\n# xy:-15,-240 (Lower Right) [Use -15,-450 for size 60]\n# color:150,150,150\nMoon {moon_phase:0.0f}% {moon_alt:0.0f}°\n# color:175,175,0\nSun {sun_alt:0.0f}°\n# color:125,0,0\nMercury {mercury_alt:0.0f}°\n# color:100,150,150\nVenus {venus_alt:0.0f}°\n# color:150,0,0\nMars {mars_alt:0.0f}°\n# color:100,100,0\nJupiter {jupiter_alt:0.0f}°\n# color:100,100,150\nSaturn {saturn_alt:0.0f}°\n# xy:15,-150 (Lower Left) [Use 15,-210 for size 60]\n# anchor:la (Left Justified)\n# color:150,150,150\nOutside Temp: {sensor_user_19:0.0f}° {temp_unit:s}\nEnclosure Temp: {sensor_user_10:0.0f}° {temp_unit:s}\nClouds: {sensor_user_23:0.0f}%\nCPU Temp: {sensor_temp_10:0.0f}° {temp_unit:s}\n# xy:15,15 (Upper Left)\n# color:0,150,0\nExposure {exposure:0.6f}\nGain {gain:d}\nStretch: {stretch:s}\n# color:0,150,150\nStars: {stars:d}\nSQM: {sqm:0.0f}\n# color:200,200,200 (default color)\n# additional labels will be added here",
+    "IMAGE_LABEL_TEMPLATE": "# size:26 [Use 60 for higher resolution cameras]\n# xy:-15,15 (Upper Right)\n# anchor:ra (Right Justified)\n# color:0,150,0\n{location}\n{timestamp:%Y.%m.%d %H:%M:%S}\n# color:100,100,0\nLat {latitude:0.1f} Long {longitude:0.1f}\n# xy:-15,-240 (Lower Right) [Use -15,-450 for size 60]\n# color:150,150,150\nMoon {moon_phase:0.0f}% {moon_alt:0.0f}°\n# color:175,175,0\nSun {sun_alt:0.0f}°\n# color:125,0,0\nMercury {mercury_alt:0.0f}°\n# color:100,150,150\nVenus {venus_alt:0.0f}°\n# color:150,0,0\nMars {mars_alt:0.0f}°\n# color:100,100,0\nJupiter {jupiter_alt:0.0f}°\n# color:100,100,150\nSaturn {saturn_alt:0.0f}°\n# xy:15,-150 (Lower Left) [Use 15,-210 for size 60]\n# anchor:la (Left Justified)\n# color:150,150,150\nOutside Temp: {sensor_user_19:0.0f}° {temp_unit:s}\nEnclosure Temp: {sensor_user_10:0.0f}° {temp_unit:s}\nClouds: {sensor_user_23:0.0f}%\nCPU Temp: {sensor_temp_10:0.0f}° {temp_unit:s}\n# xy:15,15 (Upper Left)\n# color:0,150,0\nExposure {exposure:0.6f}\nGain {gain:d}\nStretch: {stretch:s}\n# color:0,150,150\nStars: {stars:d}\nSQM: {sqm:0.0f}\n# color:200,200,200 (default color)\n# additional labels will be added here",
     "URL_TEMPLATE": "https://{bucket}.s3.{region}.{host}",
     "IMAGE_EXTRA_TEXT": "",
     "IMAGE_CROP_ROI": [],
@@ -189,7 +189,7 @@
     "IMAGE_SCALE": 100,
     "IMAGE_COLORMAP": "",
     "NIGHT_GRAYSCALE": true,
-    "DAYTIME_GRAYSCALE": false,
+    "DAYTIME_GRAYSCALE": true,
     "MOON_OVERLAY": {
         "ENABLE": true,
         "X": -110,
@@ -356,7 +356,7 @@
         ],
         "PIL_FONT_FILE": "fonts-freefont-ttf/FreeMonoBold.ttf",
         "PIL_FONT_CUSTOM": "",
-        "PIL_FONT_SIZE": 30
+        "PIL_FONT_SIZE": 24
     },
     "CARDINAL_DIRS": {
         "ENABLE": true,
@@ -524,8 +524,8 @@
         "TIMEOUT": 60.0
     },
     "YOUTUBE": {
-        "ENABLE": false,
-        "SECRETS_FILE": "",
+        "ENABLE": true,
+        "SECRETS_FILE": "/home/pi/client_secrets.json",
         "PRIVACY_STATUS": "private",
         "TITLE_TEMPLATE": "Allsky {asset_label} - {day_date:%Y-%m-%d} - {timeofday}",
         "DESCRIPTION_TEMPLATE": "",
@@ -533,6 +533,7 @@
         "TAGS": [
             "timelapse",
             "astronomy",
+            "suffolksky",
             "allsky"
         ],
         "UPLOAD_VIDEO": false,
@@ -578,7 +579,8 @@
         "GPIO_PIN_1": "D17",
         "GPIO_PIN_2": "D18",
         "GPIO_PIN_3": "D27",
-        "GPIO_PIN_4": "D22"
+        "GPIO_PIN_4": "D22",
+        "I2C_ADDRESS": "0x60"
     },
     "DEW_HEATER": {
         "CLASSNAME": "",
@@ -697,15 +699,15 @@
         "INA3221_CH3_ENABLE": true
     },
     "CHARTS": {
-        "CUSTOM_SLOT_1": "kpindex",
-        "CUSTOM_SLOT_2": "kpindex",
-        "CUSTOM_SLOT_3": "kpindex",
-        "CUSTOM_SLOT_4": "kpindex",
-        "CUSTOM_SLOT_5": "sensor_user_14",
-        "CUSTOM_SLOT_6": "sensor_user_15",
-        "CUSTOM_SLOT_7": "sensor_user_16",
-        "CUSTOM_SLOT_8": "sensor_user_14",
-        "CUSTOM_SLOT_9": "sensor_user_15"
+        "CUSTOM_SLOT_1": "sensor_user_10",
+        "CUSTOM_SLOT_2": "sensor_user_19",
+        "CUSTOM_SLOT_3": "sensor_user_21",
+        "CUSTOM_SLOT_4": "sensor_user_23",
+        "CUSTOM_SLOT_5": "sensor_user_20",
+        "CUSTOM_SLOT_6": "sensor_user_28",
+        "CUSTOM_SLOT_7": "sensor_temp_10",
+        "CUSTOM_SLOT_8": "ovation_max",
+        "CUSTOM_SLOT_9": "kpindex"
     },
     "ADSB": {
         "ENABLE": false,

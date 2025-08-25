@@ -527,7 +527,7 @@
         "ENABLE": true,
         "SECRETS_FILE": "/home/pi/client_secrets.json",
         "PRIVACY_STATUS": "private",
-        "TITLE_TEMPLATE": "Allsky {asset_label} - {day_date:%Y-%m-%d} - {timeofday}",
+        "TITLE_TEMPLATE": "SuffolkSky.com Allsky {asset_label} - {day_date:%m-%d-%Y} - {timeofday}",
         "DESCRIPTION_TEMPLATE": "",
         "CATEGORY": 22,
         "TAGS": [

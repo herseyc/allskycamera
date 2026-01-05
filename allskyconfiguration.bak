@@ -8,61 +8,63 @@
     "OWNER": "Hersey Cartwright",
     "LENS_NAME": "AllSky Lens",
     "LENS_FOCAL_LENGTH": 1.7,
-    "LENS_FOCAL_RATIO": 2,
+    "LENS_FOCAL_RATIO": 2.0,
     "LENS_IMAGE_CIRCLE": 4000,
     "LENS_OFFSET_X": 80,
     "LENS_OFFSET_Y": 0,
-    "LENS_ALTITUDE": 0,
-    "LENS_AZIMUTH": 270,
+    "LENS_ALTITUDE": 0.0,
+    "LENS_AZIMUTH": 270.0,
     "CCD_CONFIG": {
         "NIGHT": {
-            "GAIN": 150,
+            "GAIN": 150.0,
             "BINNING": 1
         },
         "MOONMODE": {
-            "GAIN": 150,
+            "GAIN": 150.0,
             "BINNING": 1
         },
         "DAY": {
-            "GAIN": 50,
+            "GAIN": 50.0,
             "BINNING": 1
-        }
+        },
+        "AUTO_GAIN_ENABLE": false,
+        "AUTO_GAIN_LEVELS": 8
     },
     "INDI_CONFIG_DEFAULTS": {
         "PROPERTIES": {},
         "SWITCHES": {}
     },
     "INDI_CONFIG_DAY": {},
-    "CCD_EXPOSURE_MAX": 30,
-    "CCD_EXPOSURE_DEF": 0,
-    "CCD_EXPOSURE_MIN": 0,
-    "CCD_EXPOSURE_MIN_DAY": 0,
+    "CCD_EXPOSURE_MAX": 30.0,
+    "CCD_EXPOSURE_DEF": 0.0,
+    "CCD_EXPOSURE_MIN": 0.0,
+    "CCD_EXPOSURE_MIN_DAY": 0.0,
     "CCD_EXPOSURE_TIMEOUT": 300,
     "CCD_BIT_DEPTH": 0,
-    "EXPOSURE_PERIOD": 30,
-    "EXPOSURE_PERIOD_DAY": 30,
+    "EXPOSURE_PERIOD": 30.0,
+    "EXPOSURE_PERIOD_DAY": 30.0,
     "FOCUS_MODE": false,
-    "FOCUS_DELAY": 2,
+    "FOCUS_DELAY": 2.0,
     "CFA_PATTERN": "",
     "USE_NIGHT_COLOR": true,
     "SCNR_ALGORITHM": "average_neutral",
     "SCNR_ALGORITHM_DAY": "",
     "WBR_FACTOR": 0.9,
-    "WBG_FACTOR": 1,
+    "WBG_FACTOR": 1.0,
     "WBB_FACTOR": 0.9,
-    "WBR_FACTOR_DAY": 1,
-    "WBG_FACTOR_DAY": 1,
-    "WBB_FACTOR_DAY": 1,
+    "WBR_FACTOR_DAY": 1.0,
+    "WBG_FACTOR_DAY": 1.0,
+    "WBB_FACTOR_DAY": 1.0,
     "AUTO_WB": true,
     "AUTO_WB_DAY": false,
     "SATURATION_FACTOR": 1.1,
-    "SATURATION_FACTOR_DAY": 1,
-    "GAMMA_CORRECTION": 1,
-    "GAMMA_CORRECTION_DAY": 1,
+    "SATURATION_FACTOR_DAY": 1.0,
+    "GAMMA_CORRECTION": 1.0,
+    "GAMMA_CORRECTION_DAY": 1.0,
     "CCD_COOLING": false,
     "CCD_COOLING_DAY": false,
-    "CCD_TEMP": 15,
-    "CCD_TEMP_DAY": 35,
+    "CCD_TEMP": 15.0,
+    "CCD_TEMP_DAY": 35.0,
     "TEMP_DISPLAY": "f",
     "PRESSURE_DISPLAY": "hPa",
     "WINDSPEED_DISPLAY": "ms",
@@ -84,8 +86,8 @@
     "SQM_ROI": [],
     "SQM_FOV_DIV": 4,
     "LOCATION_NAME": "http://www.suffolksky.com/",
-    "LOCATION_LATITUDE": 36.7794,
-    "LOCATION_LONGITUDE": -76.5355,
+    "LOCATION_LATITUDE": 36.779,
+    "LOCATION_LONGITUDE": -76.535,
     "LOCATION_ELEVATION": -9,
     "CAPTURE_PAUSE": false,
     "TIMELAPSE_ENABLE": true,
@@ -105,22 +107,22 @@
     "DAYTIME_CONTRAST_ENHANCE": true,
     "NIGHT_CONTRAST_ENHANCE": false,
     "CONTRAST_ENHANCE_16BIT": false,
-    "CLAHE_CLIPLIMIT": 1,
+    "CLAHE_CLIPLIMIT": 1.0,
     "CLAHE_GRIDSIZE": 8,
-    "NIGHT_SUN_ALT_DEG": -10,
-    "NIGHT_MOONMODE_ALT_DEG": 0,
-    "NIGHT_MOONMODE_PHASE": 33,
+    "NIGHT_SUN_ALT_DEG": -10.0,
+    "NIGHT_MOONMODE_ALT_DEG": 0.0,
+    "NIGHT_MOONMODE_PHASE": 33.0,
     "WEB_NONLOCAL_IMAGES": false,
     "WEB_LOCAL_IMAGES_ADMIN": false,
     "WEB_EXTRA_TEXT": "/home/pi/indi_allsky_add.html",
     "WEB_STATUS_TEMPLATE": "Status: {status:s}\nLat: {latitude:0.1f}/Long: {longitude:0.1f}\nSidereal: {sidereal_time:s}\nMode: {mode:s}\nSun: {sun_alt:0.1f}&deg; {sun_dir:s}\nMoon: {moon_alt:0.1f}&deg; {moon_dir:s}\nPhase: {moon_phase_str:s} <span data-bs-toggle=\"tooltip\" data-bs-placement=\"right\" title=\"{moon_phase:0.0f}%\">{moon_glyph:s}</span>\nSmoke: {smoke_rating:s} {smoke_rating_status}\nKp-index: {kpindex:0.2f} {kpindex_rating:s} {kpindex_trend:s} {kpindex_status:s}\nAurora: {ovation_max:d}% {ovation_max_status}",
     "HEALTHCHECK": {
-        "DISK_USAGE": 90,
-        "SWAP_USAGE": 90
+        "DISK_USAGE": 90.0,
+        "SWAP_USAGE": 90.0
     },
     "IMAGE_STRETCH": {
         "MODE1_ENABLE": true,
-        "MODE1_GAMMA": 3,
+        "MODE1_GAMMA": 3.0,
         "MODE1_STDDEVS": 2.25,
         "SPLIT": false,
         "MOONMODE": false,
@@ -128,9 +130,9 @@
         "CLASSNAME": "mode2_mtf",
         "MODE2_SHADOWS": 0.03,
         "MODE2_MIDTONES": 0.3,
-        "MODE2_HIGHLIGHTS": 1
+        "MODE2_HIGHLIGHTS": 1.0
     },
-    "KEOGRAM_ANGLE": 0,
+    "KEOGRAM_ANGLE": 0.0,
     "KEOGRAM_H_SCALE": 100,
     "KEOGRAM_V_SCALE": 33,
     "KEOGRAM_CROP_TOP": 0,
@@ -148,14 +150,14 @@
     },
     "STARTRAILS_MAX_ADU": 65,
     "STARTRAILS_MASK_THOLD": 190,
-    "STARTRAILS_PIXEL_THOLD": 1,
+    "STARTRAILS_PIXEL_THOLD": 1.0,
     "STARTRAILS_MIN_STARS": 0,
     "STARTRAILS_TIMELAPSE": true,
     "STARTRAILS_TIMELAPSE_MINFRAMES": 250,
-    "STARTRAILS_SUN_ALT_THOLD": -15,
+    "STARTRAILS_SUN_ALT_THOLD": -15.0,
     "STARTRAILS_MOONMODE_THOLD": true,
-    "STARTRAILS_MOON_ALT_THOLD": 91,
-    "STARTRAILS_MOON_PHASE_THOLD": 101,
+    "STARTRAILS_MOON_ALT_THOLD": 91.0,
+    "STARTRAILS_MOON_PHASE_THOLD": 101.0,
     "STARTRAILS_USE_DB_DATA": true,
     "STARTRAILS": {
         "IMAGE_CIRCLE_MASK_ENABLE": false,
@@ -190,8 +192,8 @@
     "IMAGE_FLIP_H": true,
     "IMAGE_SCALE": 100,
     "IMAGE_COLORMAP": "",
-    "NIGHT_GRAYSCALE": true,
-    "DAYTIME_GRAYSCALE": true,
+    "NIGHT_GRAYSCALE": false,
+    "DAYTIME_GRAYSCALE": false,
     "MOON_OVERLAY": {
         "ENABLE": true,
         "X": -110,
@@ -208,7 +210,7 @@
         "NOW_MARKER_SIZE": 8,
         "Y": 10,
         "OFFSET_X": 0,
-        "SCALE": 1,
+        "SCALE": 1.0,
         "LABEL": true,
         "HOUR_LINES": true,
         "DAY_COLOR": [
@@ -398,7 +400,7 @@
             128,
             128
         ],
-        "AZ_OFFSET": 0,
+        "AZ_OFFSET": 0.0,
         "RETROGRADE": false
     },
     "IMAGE_BORDER": {
@@ -422,8 +424,8 @@
         "PASSWORD_E": "",
         "PRIVATE_KEY": "",
         "PUBLIC_KEY": "",
-        "CONNECT_TIMEOUT": 10,
-        "TIMEOUT": 60,
+        "CONNECT_TIMEOUT": 10.0,
+        "TIMEOUT": 60.0,
         "CERT_BYPASS": true,
         "REMOTE_IMAGE_NAME": "image.{ext}",
         "REMOTE_PANORAMA_NAME": "panorama.{ext}",
@@ -487,8 +489,8 @@
         "NAMESPACE": "",
         "HOST": "amazonaws.com",
         "PORT": 0,
-        "CONNECT_TIMEOUT": 10,
-        "TIMEOUT": 60,
+        "CONNECT_TIMEOUT": 10.0,
+        "TIMEOUT": 60.0,
         "URL_TEMPLATE": "https://{bucket}.s3.{region}.{host}",
         "ACL": "",
         "STORAGE_CLASS": "STANDARD",
@@ -509,7 +511,8 @@
         "QOS": 0,
         "TLS": true,
         "CERT_BYPASS": true,
-        "PUBLISH_IMAGE": true
+        "PUBLISH_IMAGE": true,
+        "PROTOCOL": "MQTTv5"
     },
     "SYNCAPI": {
         "ENABLE": false,
@@ -522,8 +525,8 @@
         "EMPTY_FILE": false,
         "UPLOAD_IMAGE": 1,
         "UPLOAD_PANORAMA": 1,
-        "CONNECT_TIMEOUT": 10,
-        "TIMEOUT": 60
+        "CONNECT_TIMEOUT": 10.0,
+        "TIMEOUT": 60.0
     },
     "YOUTUBE": {
         "ENABLE": true,
@@ -533,10 +536,10 @@
         "DESCRIPTION_TEMPLATE": "",
         "CATEGORY": 22,
         "TAGS": [
-            "timelapse",
             "astronomy",
             "suffolksky",
-            "allsky"
+            "allsky",
+            "timelapse"
         ],
         "UPLOAD_VIDEO": false,
         "UPLOAD_STARTRAIL_VIDEO": false,
@@ -556,7 +559,20 @@
         "IMMEDIATE": true,
         "IMMEDIATE_DAY": true,
         "MQTT_PASSWORD": "",
-        "MQTT_PASSWORD_E": ""
+        "MQTT_PASSWORD_E": "",
+        "CCM_DISABLE": false,
+        "CCM_DISABLE_DAY": false,
+        "MQTT_TRANSPORT": "tcp",
+        "MQTT_PROTOCOL": "MQTTv5",
+        "MQTT_HOST": "localhost",
+        "MQTT_PORT": 8883,
+        "MQTT_USERNAME": "indi-allsky",
+        "MQTT_QOS": 0,
+        "MQTT_TLS": true,
+        "MQTT_CERT_BYPASS": true,
+        "MQTT_EXPOSURE_TOPIC": "libcamera/exposure",
+        "MQTT_IMAGE_TOPIC": "libcamera/image",
+        "MQTT_METADATA_TOPIC": "libcamera/metadata"
     },
     "PYCURL_CAMERA": {
         "URL": "",
@@ -566,7 +582,7 @@
         "IMAGE_FILE_TYPE": "jpg"
     },
     "ACCUM_CAMERA": {
-        "SUB_EXPOSURE_MAX": 1,
+        "SUB_EXPOSURE_MAX": 1.0,
         "EVEN_EXPOSURES": true,
         "CLAMP_16BIT": false
     },
@@ -575,7 +591,7 @@
         "HEIGHT": 3040,
         "IMAGE_CIRCLE_DIAMETER": 3500,
         "ROTATING_STAR_COUNT": 30000,
-        "ROTATING_STAR_FACTOR": 1,
+        "ROTATING_STAR_FACTOR": 1.0,
         "BUBBLE_COUNT": 1000
     },
     "FOCUSER": {
@@ -593,7 +609,7 @@
         "INVERT_OUTPUT": false,
         "LEVEL_DEF": 100,
         "THOLD_ENABLE ": false,
-        "MANUAL_TARGET": 0,
+        "MANUAL_TARGET": 0.0,
         "TEMP_USER_VAR_SLOT": "sensor_user_0",
         "LEVEL_LOW": 33,
         "LEVEL_MED": 66,
@@ -603,7 +619,8 @@
         "THOLD_DIFF_HIGH": 5,
         "THOLD_ENABLE": false,
         "I2C_ADDRESS": "0x10",
-        "DEWPOINT_USER_VAR_SLOT": "sensor_user_2"
+        "DEWPOINT_USER_VAR_SLOT": "sensor_user_2",
+        "HOLD_SECONDS": 0
     },
     "FAN": {
         "CLASSNAME": "",
@@ -612,7 +629,7 @@
         "INVERT_OUTPUT": false,
         "LEVEL_DEF": 100,
         "THOLD_ENABLE ": false,
-        "TARGET": 30,
+        "TARGET": 30.0,
         "TEMP_USER_VAR_SLOT": "sensor_user_0",
         "LEVEL_LOW": 33,
         "LEVEL_MED": 66,
@@ -621,7 +638,8 @@
         "THOLD_DIFF_MED": 5,
         "THOLD_DIFF_HIGH": 10,
         "THOLD_ENABLE": false,
-        "I2C_ADDRESS": "0x11"
+        "I2C_ADDRESS": "0x11",
+        "HOLD_SECONDS": 0
     },
     "GENERIC_GPIO": {
         "A_CLASSNAME": "",
@@ -718,7 +736,17 @@
         "HDC302X_HEATER_DAY": "OFF",
         "INA3221_CH1_ENABLE": true,
         "INA3221_CH2_ENABLE": true,
-        "INA3221_CH3_ENABLE": true
+        "INA3221_CH3_ENABLE": true,
+        "A_PIN_2": "",
+        "B_PIN_2": "",
+        "C_PIN_2": "",
+        "D_PIN_2": "",
+        "MQTT_PROTOCOL": "MQTTv5",
+        "DHT_USE_PULSEIO": false,
+        "AS3935_OUTDOOR_MODE": true,
+        "AS3935_MASK_DISTURBER": false,
+        "AS3935_NOISE_LEVEL": 2,
+        "AS3935_SPIKE_REJECTION": 2
     },
     "CHARTS": {
         "CUSTOM_SLOT_1": "sensor_user_10",
@@ -738,7 +766,7 @@
         "USERNAME": "",
         "PASSWORD": "",
         "PASSWORD_E": "",
-        "ALT_DEG_MIN": 20,
+        "ALT_DEG_MIN": 20.0,
         "LABEL_ENABLE": true,
         "LABEL_LIMIT": 10,
         "AIRCRAFT_LABEL_TEMPLATE": "{id:s} {distance:0.1f}km {alt:0.1f}° {dir:s}",
@@ -747,7 +775,7 @@
     "SATELLITE_TRACK": {
         "ENABLE": true,
         "DAYTIME_TRACK": true,
-        "ALT_DEG_MIN": 20,
+        "ALT_DEG_MIN": 20.0,
         "LABEL_ENABLE": true,
         "LABEL_LIMIT": 10,
         "SAT_LABEL_TEMPLATE": "{title:s} {alt:0.1f}° {dir:s}",

@@ -6,6 +6,9 @@
     "INDI_PORT": 7624,
     "INDI_CAMERA_NAME": "",
     "OWNER": "Hersey Cartwright",
+    "WEBSITE": {
+        "TITLE": "indi-allsky"
+    },
     "LENS_NAME": "AllSky Lens",
     "LENS_FOCAL_LENGTH": 1.7,
     "LENS_FOCAL_RATIO": 2.0,
@@ -49,6 +52,8 @@
     "USE_NIGHT_COLOR": true,
     "SCNR_ALGORITHM": "average_neutral",
     "SCNR_ALGORITHM_DAY": "",
+    "SCNR_MTF_MIDTONES": 0.55,
+    "SCNR_MTF_MIDTONES_DAY": 0.55,
     "WBR_FACTOR": 0.9,
     "WBG_FACTOR": 1.0,
     "WBB_FACTOR": 0.9,
@@ -57,6 +62,12 @@
     "WBB_FACTOR_DAY": 1.0,
     "AUTO_WB": true,
     "AUTO_WB_DAY": false,
+    "WBR_MTF_MIDTONES": 0.5,
+    "WBG_MTF_MIDTONES": 0.5,
+    "WBB_MTF_MIDTONES": 0.5,
+    "WBR_MTF_MIDTONES_DAY": 0.5,
+    "WBG_MTF_MIDTONES_DAY": 0.5,
+    "WBB_MTF_MIDTONES_DAY": 0.5,
     "SATURATION_FACTOR": 1.1,
     "SATURATION_FACTOR_DAY": 1.0,
     "GAMMA_CORRECTION": 1.0,
@@ -170,6 +181,7 @@
     "IMAGE_CALIBRATE_FIX_HOLES": true,
     "IMAGE_CALIBRATE_HOLE_THOLD": 30,
     "IMAGE_CALIBRATE_MANUAL_OFFSET": 0,
+    "PRIVACY_MODE": false,
     "IMAGE_EXIF_PRIVACY": false,
     "IMAGE_FILE_TYPE": "jpg",
     "IMAGE_FILE_COMPRESSION": {
@@ -593,6 +605,20 @@
         "ROTATING_STAR_COUNT": 30000,
         "ROTATING_STAR_FACTOR": 1.0,
         "BUBBLE_COUNT": 1000
+    },
+    "VIRTUALSKY": {
+        "MAGNITUDE": 6.0,
+        "CONSTELLATIONS": true,
+        "CONSTELLATIONLABELS": false,
+        "SHOWSTARS": true,
+        "SHOWSTARLABELS": true,
+        "SHOWPLANETS": true,
+        "SHOWPLANETLABELS": true,
+        "IMAGE_CIRCLE_DIAMETER": 3500,
+        "LATITUDE_OFFSET": 0.0,
+        "LONGITUDE_OFFSET": 0.0,
+        "OFFSET_X": 0,
+        "OFFSET_Y": 0
     },
     "FOCUSER": {
         "CLASSNAME": "",
